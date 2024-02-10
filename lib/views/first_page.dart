@@ -111,13 +111,13 @@ class _FirstPageState extends State<FirstPage> {
                     child: Padding(
                       padding: EdgeInsets.all(
                         20,
-                      ), // Padding de 20 à l'intérieur de la SizedBox
+                      ), 
                       child: Container(
                         decoration: BoxDecoration(
-                          color: Colors.white, // Fond blanc
+                          color: Colors.white, 
                           borderRadius: BorderRadius.circular(
                             20,
-                          ), // Bords arrondis
+                          ), 
                           boxShadow: [
                             BoxShadow(
                               color: Colors.black.withOpacity(
@@ -137,14 +137,14 @@ class _FirstPageState extends State<FirstPage> {
                           children: [
                             SizedBox(
                               height: 10,
-                            ), // Espacement
+                            ), 
                             Stack(
                               alignment: Alignment.topRight,
                               children: [
                                 Padding(
                                   padding: EdgeInsets.all(
                                     20,
-                                  ), // Décalage de l'image vers le bas
+                                  ), 
                                   child: ClipRRect(
                                     borderRadius: BorderRadius.circular(
                                       20,
@@ -182,7 +182,7 @@ class _FirstPageState extends State<FirstPage> {
                             Padding(
                               padding: const EdgeInsets.only(
                                 left: 15,
-                                right: 10, // Ajout du padding horizontal
+                                right: 10, 
                               ),
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -195,7 +195,7 @@ class _FirstPageState extends State<FirstPage> {
                                   ),
                                   SizedBox(
                                     height: 5,
-                                  ), // Espacement
+                                  ), 
                                   Text(
                                     "Description",
                                     style: TextStyle(
@@ -233,10 +233,10 @@ class _FirstPageState extends State<FirstPage> {
                             ),
                             SizedBox(
                               height: 5,
-                            ), // Espaceme // Espacement
+                            ), 
                             SizedBox(
                               height: 10,
-                            ), // Espacement
+                            ), 
                           ],
                         ),
                       ),
@@ -248,13 +248,13 @@ class _FirstPageState extends State<FirstPage> {
                     child: Padding(
                       padding: EdgeInsets.all(
                         20,
-                      ), // Padding de 20 à l'intérieur de la SizedBox
+                      ), 
                       child: Container(
                         decoration: BoxDecoration(
                           color: Colors.white, // Fond blanc
                           borderRadius: BorderRadius.circular(
                             20,
-                          ), // Bords arrondis
+                          ), 
                           boxShadow: [
                             BoxShadow(
                               color: Colors.black.withOpacity(
@@ -274,14 +274,14 @@ class _FirstPageState extends State<FirstPage> {
                           children: [
                             SizedBox(
                               height: 10,
-                            ), // Espacement
+                            ), 
                             Stack(
                               alignment: Alignment.topRight,
                               children: [
                                 Padding(
                                   padding: EdgeInsets.all(
                                     20,
-                                  ), // Décalage de l'image vers le bas
+                                  ), 
                                   child: ClipRRect(
                                     borderRadius: BorderRadius.circular(
                                       20,
@@ -521,14 +521,14 @@ class _FirstPageState extends State<FirstPage> {
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
-            Text(
+            const Text(
               "Best Selling",
               style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             InkWell(
@@ -538,7 +538,6 @@ class _FirstPageState extends State<FirstPage> {
                     MaterialPageRoute(
                         builder: (context) => const SecondaryPage()));
 
-                // Action à effectuer lors du clic sur InkWell
               },
               child: Container(
                 padding: EdgeInsets.all(10),
@@ -570,7 +569,7 @@ class _FirstPageState extends State<FirstPage> {
                     ),
                     SizedBox(width: 10), // Espacement entre l'image et le texte
                     // Texte et bouton
-                    Expanded(
+                    const Expanded(
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -590,11 +589,10 @@ class _FirstPageState extends State<FirstPage> {
                         ],
                       ),
                     ),
-                    // Carré noir pour l'icône avec des bords arrondis
                     Container(
                       padding: EdgeInsets.all(8),
                       decoration: BoxDecoration(
-                        shape: BoxShape.circle, // Bords arrondis pour le carré
+                        shape: BoxShape.circle,
                         color: Colors.black,
                       ),
                       child: Icon(Icons.arrow_forward, color: Colors.white),

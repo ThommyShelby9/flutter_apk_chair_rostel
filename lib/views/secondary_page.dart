@@ -46,7 +46,7 @@ class _SecondaryPageState extends State<SecondaryPage> {
                 // Texte du nom du produit au milieu
                 Positioned(
                   top: 50,
-                  left: MediaQuery.of(context).size.width / 4,
+                  left: MediaQuery.of(context).size.width / 3,
                   child: Text(
                     "Product Name",
                     style: TextStyle(
@@ -92,7 +92,10 @@ class _SecondaryPageState extends State<SecondaryPage> {
                       shape: BoxShape.circle,
                       color: Colors.white,
                     ),
-                    child: Icon(Icons.favorite, color: Colors.red,),
+                    child: Icon(
+                      Icons.favorite,
+                      color: Colors.red,
+                    ),
                   ),
                   alignment: Alignment.bottomRight,
                 ),
@@ -236,8 +239,8 @@ class _SecondaryPageState extends State<SecondaryPage> {
               child: TextButton(
                 onPressed: () {},
                 style: ButtonStyle(
-                  backgroundColor:
-                      MaterialStateProperty.all<Color>(Color.fromARGB(199, 5, 13, 22)),
+                  backgroundColor: MaterialStateProperty.all<Color>(
+                      Color.fromARGB(199, 5, 13, 22)),
                   shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                     RoundedRectangleBorder(
                       borderRadius: BorderRadius.only(
